@@ -1,0 +1,305 @@
+/* Reglas
+Selectores
+Declaraciones
+Propiedades
+Valores
+
+para selectro de clase: .link
+para selector de id: #portafolio */
+
+header{
+    color: white;
+    background-color: #1d252c;
+    display: flex;
+    justify-content: space-between;
+    height: 93px;
+    align-items: center;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    height: inherit;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.menu{
+    height: inherit;
+}
+
+.header ol{
+    display: flex;
+    height: inherit;  
+}
+
+.header ol li{
+    height: inherit;
+}
+
+ol, ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+    margin: 0;
+}
+
+.hero {
+    height: 300px;
+    background-color: #1b2127;
+    /*background-image: url('../imagenes/portada.jpg');
+    background-size: 500px 300px; /* ancho alto*/
+    background-repeat: no-repeat;
+    background-position-x: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image{
+    object-fit: cover;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h1{
+    color: white;
+    font-size: 40px;  /*tamaño de la letra*/
+    line-height: 150%;  /*separacion de lineas*/
+    font-weight: normal;  /*grosor de la fuente*/
+    letter-spacing: -.2px;  /*Separacion de letras*/
+    margin: 0;
+    /*margin: 100px 150px 70px 30px;  /* margenes con los siguientes datos: top right bottom left*/
+    /*text-transform: uppercase; transformar el texto, ejemplo a mayuscula*/
+    /*text-decoration: underline;  añadirle decoracion al texto, ejemplo subrayado*/
+}
+
+h1 strong{
+    color: #026fff;
+}
+
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Prop', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+body {
+    font-family: 'Source Sans Prop', sans-serif;
+    margin: 0px;
+}
+
+.portfolio{
+    background-color: #FaFaFa;
+    padding: 20px;
+}
+
+.project{
+    border: 1px solid red;
+    border-radius: 10px; /*borde redondeado*/
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*border-top: 10px solid red ;  tamaño tipo estio*/
+
+}
+
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-course{
+    margin: 10px 0;
+}
+
+.project-date{
+    margin: 10px p;
+}
+
+.project-url{
+    margin: 10px 0;
+}
+
+.project-description{
+    font-size: 20px;
+}
+
+.project strong{
+    font-family: 'Fjalla One';
+}
+
+.project-details{
+    width: 500px;
+} 
+
+.project-imageContainer{
+    width: 500px;
+}
+
+.footer{
+    color: white;
+    background-color: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer a{
+    color: white;
+}
+
+#miniLogo{
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.event{
+    margin: 10px;
+    width: 480px;
+    border-radius: 30 px;
+    background-color: #f4fbff;
+   /*flex-shrink: 0; /*para que ocupe el tamaño*/
+    /*overflow: hidden;*/
+
+}
+
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-detail{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-description{
+    text-align: left;
+}
+
+.event-url{
+    border: 1px solid  #056fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #056fff;
+    border-radius: 5px;
+}
+
+.event-title{
+    margin-left: 40px;
+}
+
+.contact{
+    background-color: #056fff;
+    color: white;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social{
+
+}
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    /*border: 1px solid white;*/
+    background-size: 50px 50px;
+}
+
+.social-link.twitter{
+    background-image: url(../imagenes/twitter.svg);
+}
+.social-link.facebook{
+    background-image: url(../imagenes/facebook.svg);
+}
+.social-link.instagram{
+    background-image: url(../imagenes/instagram.svg);
+}
+
+.form-email input{
+    border-color: gray;
+    padding: 10px 20px 10px 25px;
+    border-radius: 5px;
+    border-style: solid;
+    background-image: url('../imagenes/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button{
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: #ffffff;
+    padding: 5px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.form-email h3{
+    font-family: 'Source Sans Prop', sans-serif;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+/*row es con justify, column es con align*/
+
+/*.flexbox{
+    display: flex;  
+    flex-wrap: wrap; /*que cuando se llene baje a la siguiente fila*/
+    /*justify-content: flex-end; /*centrar las cosas*/
+    /*justify-content: space-between; /*espaciado entre elementos*/
+    /*align-items: center; /*alineaciones verticales opuestas a la columna o fila*/
+    /*border: 5px solid blue;
+    /*flex-direction: column;   poner como columna o como filas*/
+/*}
+
+/*.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    flex-shrink: 0; /*que su alto y ancho no cambie 0 o 1
+    margin: 20px;
+}*/
